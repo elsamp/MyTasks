@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layouts.RelativeGroupItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:onClick="setTaskGroup">
+    
+    <ImageView
+        android:id="@+id/group_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/group_img_desc"/>
+    
+    <TextView
+        android:id="@+id/group_code"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/default_code"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:hint="@string/group_hint"
+        android:maxLength="2"
+        />
+    
+    <TextView 
+        android:id="@+id/group_name"
+        android:layout_toRightOf="@id/group_icon"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+    	android:layout_height="30dp"
+        android:textSize="15sp"
+        android:text="@string/default_string"/>
+
+</layouts.RelativeGroupItemLayout>

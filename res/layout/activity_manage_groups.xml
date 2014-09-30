@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+    
+    <FrameLayout
+        android:id="@+id/week_header"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:background="@color/blue">
+        
+        <TextView
+           	android:id="@+id/week_range" 
+           	android:textColor="@color/white"
+           	android:textSize="18sp"
+           	android:layout_gravity="center_horizontal|center_vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+           	android:text="Task Groups"/>
+        
+        <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="8dp"
+        android:layout_gravity="center_vertical|right"
+		android:text="+"
+		android:textSize="20sp"
+		android:textStyle="bold"
+		android:gravity="center"
+		android:textColor="@color/white"
+        android:background="@drawable/add_task_button"
+        android:onClick="addGroup"
+        />
+        
+    </FrameLayout>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+	    <LinearLayout
+	        android:id="@+id/group_container"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	        />
+    </ScrollView>
+
+</LinearLayout>

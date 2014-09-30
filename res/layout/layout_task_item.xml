@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layouts.RelativeTaskLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:id="@+id/task_group">
+    
+    <EditText 
+        android:id="@+id/time_alloted"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/dark_grey"
+		android:text="@string/default_time"
+		android:hint="@string/time_hint"
+		android:textSize="12sp" />
+    
+    <Button
+        android:id="@+id/task_group_icon"
+        android:layout_toRightOf="@+id/time_alloted"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_margin="-2dp"
+        android:padding="2dp"
+        android:text="@string/default_code"
+        android:onClick="showDialog"/>
+    
+    <EditText 
+        android:id="@+id/task_descript"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/task_group_icon"
+		android:hint="@string/task_hint"
+		android:textSize="14sp"/>
+    
+    <Button
+         android:background="@drawable/remove_task_button"
+         android:layout_alignParentRight="true"
+         android:layout_width="25dp"
+         android:layout_height="25dp"
+         android:layout_marginTop="5dp"
+         android:text="@string/x_string"
+         android:gravity="center_vertical|center_horizontal"
+         android:textSize="15sp"
+         android:textStyle="bold"
+         android:textColor="@color/white"
+         android:onClick="removeTask"
+         />
+    
+    
+
+</layouts.RelativeTaskLayout>

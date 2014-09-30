@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  
+* Filename: custom_button_blue.xml
+* Author: Erica Sampson
+* 
+-->
+
+<!-- Credit where credit is due: http://stackoverflow.com/questions/1521640/standard-android-button-with-a-different-color -->
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true" >
+        <shape android:shape="oval">
+            <gradient
+                android:startColor="@color/red"
+                android:endColor="@color/dark_red"
+                android:angle="270" />
+        </shape>
+    </item>
+
+    <item android:state_focused="true" >
+        <shape android:shape="oval">
+            <gradient
+                android:endColor="@color/red"
+                android:startColor="@color/dark_red"
+                android:angle="270" />
+        </shape>
+    </item>
+
+    <item> 
+             
+        <shape android:shape="oval">
+            <gradient
+                android:endColor="@color/red"
+                android:startColor="@color/dark_red"
+                android:angle="270" />
+        </shape>
+        
+    </item>
+</selector>

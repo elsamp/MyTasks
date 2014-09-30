@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layouts.RelativeDayLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    
+    <TextView 
+        android:id="@+id/week_day_label"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/grey"
+        android:text="Monday | April 14"
+        android:textSize="15sp"
+        android:padding="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/task_container"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/week_day_label"
+    	android:orientation="vertical"
+        />
+    
+    <Button
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_margin="4dp"
+		android:layout_alignParentRight="true"
+		android:text="+"
+		android:textColor="@color/white"
+        android:background="@drawable/add_task_button"
+        android:onClick="addTask"
+        />
+    
+</layouts.RelativeDayLayout>

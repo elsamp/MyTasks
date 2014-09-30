@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layouts.RelativeGroupLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:layout_margin="10dp">
+    
+    <Button
+        android:id="@+id/colour_selection"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:onClick="showDialog"
+        />
+    
+    <EditText 
+        android:id="@+id/group_code"
+        android:layout_toRightOf="@id/colour_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="@string/default_code"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:hint="@string/group_hint"
+        android:maxLength="2"
+        />
+    
+    <EditText 
+        android:id="@+id/group_desc"
+        android:layout_toRightOf="@id/group_code"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="@string/default_string"
+        android:textSize="15sp"
+        android:paddingLeft="10dp"
+        android:hint="@string/group_desc_hint"
+        android:maxLength="19"
+        />
+    
+    <Button
+         android:background="@drawable/remove_task_button"
+         android:layout_alignParentRight="true"
+         android:layout_marginTop="7dp"
+         android:layout_width="25dp"
+         android:layout_height="25dp"
+         android:text="@string/x_string"
+         android:gravity="center_vertical|center_horizontal"
+         android:textSize="15sp"
+         android:textStyle="bold"
+         android:textColor="@color/white"
+         android:onClick="removeGroup"
+         />
+    
+
+</layouts.RelativeGroupLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  
+* Filename: custom_button_blue.xml
+* Author: Erica Sampson
+* 
+-->
+
+<!-- Credit where credit is due: http://stackoverflow.com/questions/1521640/standard-android-button-with-a-different-color -->
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true" >
+        <shape>
+            <gradient
+                android:startColor="@color/grey"
+                android:endColor="@color/dark_grey"
+                android:angle="270" />
+            <stroke
+                android:width="1dp"
+                android:color="@color/dark_blue" />
+            <corners
+                android:radius="25dp" />
+            <padding
+                android:left="2dp"
+                android:top="2dp"
+                android:right="2dp"
+                android:bottom="2dp" />
+        </shape>
+    </item>
+
+    <item android:state_focused="true" >
+        <shape>
+            <gradient
+                android:endColor="@color/dark_grey"
+                android:startColor="@color/grey"
+                android:angle="270" />
+            <stroke
+                android:width="3dp"
+                android:color="@color/light_grey" />
+            <corners
+                android:radius="25dp" />
+            <padding
+                android:left="2dp"
+                android:top="2dp"
+                android:right="2dp"
+                android:bottom="2dp" />
+        </shape>
+    </item>
+
+    <item>        
+        <shape>
+            <gradient
+                android:endColor="@color/dark_grey"
+                android:startColor="@color/grey"
+                android:angle="270" />
+            <stroke
+                android:width="1dp"
+                android:color="@color/dark_grey" />
+            <corners
+                android:radius="25dp" />
+            <padding
+                android:left="2dp"
+                android:top="2dp"
+                android:right="2dp"
+                android:bottom="2dp" />
+        </shape>
+    </item>
+</selector>

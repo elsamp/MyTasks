@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Not currently in use -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+    
+    <TextView 
+        android:id="@+id/description_label"
+        android:text="Task Description"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:padding="5dp"
+        />
+    
+    <EditText 
+        android:id="@+id/decription_text"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:hint="Do something..."
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/description_label"
+    	android:layout_marginBottom="20dp"
+    	/>
+    
+    <TextView
+        android:id="@+id/group_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/decription_text"
+        android:background="@color/grey"
+        android:padding="5dp"
+        android:text="Group"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+</RelativeLayout>

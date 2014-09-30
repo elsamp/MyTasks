@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".WeekViewMain"
+    android:id="@+id/activity_week_view_main">
+
+
+    <FrameLayout
+        android:id="@+id/week_header"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:background="@color/blue"
+	    android:paddingTop="10dp">
+    
+        <Button
+            android:id="@+id/last_week_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="left"
+            android:onClick="goToPreviousWeek"
+            android:background="@drawable/left_arrow"/>
+
+        <TextView
+           	android:id="@+id/week_range" 
+           	android:textColor="@color/white"
+           	android:textSize="18sp"
+           	android:layout_gravity="center_horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+           	android:text="@string/default_string"/>"
+        
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:background="@drawable/right_arrow"
+            android:onClick="goToNextWeek"/>
+
+	</FrameLayout>
+	
+    <ScrollView 
+        android:layout_below="@id/week_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+	    <LinearLayout
+	        android:id="@+id/day_container"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	        />
+    </ScrollView>
+	
+    
+</RelativeLayout>
