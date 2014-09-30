@@ -10,7 +10,7 @@ When I finished school I decided to model myself a task manager that resembled m
 
 Application Features
 --------------------
-This application provides features for easily adding tasks, appointments or goals to any day of the week and setting the following task attributes:
+This android application provides features for easily adding tasks, appointments or goals to any day of the week and setting the following task attributes:
 - Description
 - Time
 - Group
